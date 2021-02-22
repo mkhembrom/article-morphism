@@ -1,0 +1,30 @@
+<div class="mas">
+    <div class="mas-left"> 
+        <h1>Articles</h1>
+        <h5>numbers of articles <span class="badge ml-auto badge-info badge-pill"><%= articles.length %></span></h5>
+    </div>
+    <div class="mas-right">
+       <button class="btn-add"><a href="/add">add</a></button>
+    </div>
+</div>
+    
+    
+   
+<div class="content-box"> 
+    <div class="content-box-left">
+        <ul class="card-section">
+            <% for(let i=0; i<articles.length; i++ ) { %>
+            
+                    <li class="card-list">
+                        <div class="card">
+                            <a href="/article/<%= articles[i]._id %>"><%= articles[i].title %></a>
+                        </div>
+                    </li>
+                
+            <% } %>   
+        </ul>
+    </div>
+    <div class="content-box-right">
+        <img src="undraw_happy.svg" alt="svg">
+    </div>
+</div>

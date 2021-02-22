@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1efef;
+  font-family: "Pacifico", cursive;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+.container {
+  padding: 1rem;
+}
+
+.content-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-boxs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-box-left {
+  flex: 1;
+}
+
+.content-box-rights {
+  flex: 1;
+}
+
+.content-box-right {
+  flex: 2;
+  padding: 1rem;
+  text-align: center;
+}
+
+img {
+  width: 480px;
+  height: 480px;
+}
+
+.card-section {
+  justify-content: center;
+  display: flex;
+  align-items: start;
+
+  flex-direction: column;
+}
+.card-list {
+  list-style-type: none;
+
+  padding: 1rem;
+  width: 280px;
+}
+
+.card {
+  border: none;
+  outline: none;
+
+  padding: 1rem;
+  border-radius: 12px;
+  background: #f1efef;
+  box-shadow: 21px 21px 42px #dedcdc, -21px -21px 42px #ffffff;
+}
+
+.cards {
+  border: none;
+  outline: none;
+  width: 480px;
+  height: 200px;
+  padding: 1rem 1.2rem 1rem;
+  margin-top: 1rem;
+  border-radius: 12px;
+  background: #f1efef;
+  box-shadow: 21px 21px 42px #dedcdc, -21px -21px 42px #ffffff;
+}
+.card a {
+  padding-left: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card:hover {
+  border-radius: 9px;
+  background: #f1efef;
+  box-shadow: 15px 15px 13px #e3e1e1, -15px -15px 13px #fffdfd;
+}
+
+.card-btn {
+  padding: 1rem;
+}
+
+.content-articles {
+  width: 480px;
+}
+
+.mas {
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.mas-left {
+  flex: 1;
+}
+
+.mas-right {
+  flex: 4;
+}
+
+.btn-add {
+  border: none;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background: #f1efef;
+  box-shadow: 15px 15px 12px #e7e5e5, -15px -15px 12px #fbf9f9;
+}
+
+.btn-add a {
+  text-decoration: none;
+}
+
+.btn-add:hover {
+  border-radius: 50%;
+  background: #f1efef;
+  box-shadow: inset 9px 9px 13px #dbd9d9, inset -9px -9px 13px #ffffff;
+}

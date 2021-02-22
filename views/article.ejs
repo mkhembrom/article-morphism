@@ -1,0 +1,20 @@
+<h1><%= articles.title %></h1>
+<h5>Writtern by <i><%= articles.author %></i></h5>
+<div class="content-boxs">
+    <div class="content-box-left">
+    <div class="card-section">
+            <div class="cardlist">
+                <h3 class="cards"><%= articles.body %></h3>
+            </div>
+    </div>
+    <div class="card-btn">
+        <a class="btn btn-primary" href="/edit/<%= articles._id %>">Edit</a>
+        <a class="btn btn-danger" href="/remove/<%= articles._id %>">Delete</a>
+        <a class="btn btn-primary" href="/">Back</a>
+    </div>
+    </div>
+
+    <!-- <div class="content-box-rights">
+        <img src="undraw_happy.svg" alt="svg">
+    </div> -->
+</div>
