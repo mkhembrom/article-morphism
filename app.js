@@ -11,7 +11,7 @@ const userRouter = require("./routes/users");
 const api = require("./api/articles.api");
 const path = require("path");
 
-mongoose.connect(process.env.DATABASE_URL, {
+mongoose.connect(process.env.DATABASE_URI, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
