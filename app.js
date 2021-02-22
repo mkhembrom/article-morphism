@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+
 const express = require("express");
 const layout = require("express-ejs-layouts");
 const mongoose = require("mongoose");
@@ -7,9 +11,7 @@ const userRouter = require("./routes/users");
 const api = require("./api/articles.api");
 const path = require("path");
 
-const DATABASE_URL = "mongodb://localhost/nodekb";
-
-mongoose.connect(DATABASE_URL, {
+mongoose.connect(process.env.DATABASE_URL, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
